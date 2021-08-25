@@ -98,29 +98,28 @@
   display: inline-block;
   width: 230px;
   margin-right: 20px;
-  text-align: center;
 }
 
-/* line 93, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+/* line 92, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .promo .menu__link:focus {
   outline: none;
   border: 2px solid #B8FFEC;
   border-radius: 6px;
 }
 
-/* line 101, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+/* line 100, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .promo__desc {
   margin: 24px 16px 16px 16px;
   font-size: 14px;
   font-weight: 400;
 }
 
-/* line 106, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+/* line 105, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .promo__show-tablet, .promo__show-laptop {
   display: none;
 }
 
-/* line 108, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+/* line 107, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .promo__read-more {
   margin-left: 32px;
   font-size: 16;
@@ -128,7 +127,7 @@
   position: relative;
 }
 
-/* line 113, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+/* line 112, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .promo__read-more::before {
   content: '';
   position: absolute;
@@ -139,7 +138,7 @@
   background: url("../icons/read-more/icon.svg") center center/cover no-repeat;
 }
 
-/* line 124, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+/* line 123, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .promo__img {
   display: block;
   margin: 0 auto;
