@@ -1,0 +1,135 @@
+@media (min-width: 768px) {
+    .head-block {
+
+        &__wrapper-table {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 250px;
+            width: 150px;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                right: -15px;
+                width: 2px;
+                height: 32px;
+                background-color: #efefef;
+                border-radius: 1px;
+            }
+        }
+
+        &__logo {
+            position: relative;
+
+            &::after {
+                content: '';
+                display: none;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: -15px;
+                top: 12px;
+                width: 2px;
+                height: 32px;
+                border-radius: 1px;
+                background-color: #efefef;
+
+            }
+        }
+    }
+
+    .promo {
+
+        &__reviews, &__item-wrapper {
+            display: none;
+        }
+
+        &__desc {
+            display: inline-block;
+            width: 310px;
+        }
+
+        &__show-tablet {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        &__img {
+            display: inline-block;
+            width: 360px;
+            vertical-align: top;
+            margin: 24px 0 0 45px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .head-block {
+        display: none;
+    }
+
+    .promo {
+
+        &__item-wrapper {
+            display: flex;
+        }
+
+        &__head-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__item {
+            margin-right: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__info {
+            @include fonts-size(16px, 500);
+        }
+
+        &__icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background-color: #FF3E79;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+        }
+
+        &__reviews {
+            display: block;
+            @include fonts-size(16px, 500);
+            color: #7E7E82;
+            margin: 0 0 20px 40px;
+        }
+
+        &__desc {
+            width: 490px;
+        }
+
+        &__show-tablet {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        &__show-laptop {
+            display: inline;
+        }
+
+        &__img {
+            width: 530px;
+            height: 310px;
+            margin-left: 180px;
+        }
+    }
+}

@@ -1,0 +1,129 @@
+* {
+    font-family: 'TT Lakes';
+}
+
+@mixin fonts-size($fs, $fw) {
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+.head-block {
+    height: 88px;
+    padding: 18.5px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__wrapper-table {
+        display: none;
+    }
+
+    &__logo {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: -12px;
+            top: 12px;
+            width: 2px;
+            height: 32px;
+            background-color: #efefef;
+            border-radius: 1px;
+        }
+    }
+    &__item {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: #FF3E79;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.promo {
+    min-height: 500px;
+    padding: 24px 0 35px 0;
+    background-color: #f8f8f8;
+
+    &__reviews, &__item-wrapper {
+        display: none;
+    }
+
+    &__title {
+        @include fonts-size(28px, 700);
+        margin-left: 16px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -16px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 40px;
+            background-color: #41F6D7;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    }
+
+    .menu {
+
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            overflow: scroll;
+            list-style-type: none;
+        }
+
+        &__link {
+            @include fonts-size(16px, 500);
+            color: #7E7E82;
+            text-decoration: none;
+            display: inline-block;
+            width: 230px;
+            margin-right: 20px;
+            text-align: center;
+
+            &:focus {
+                outline: none;
+                border: 2px solid #B8FFEC;
+                border-radius: 6px;
+            }
+        }
+    }
+
+    &__desc {
+        margin: 24px 16px 16px 16px;
+        @include fonts-size(14px, 400);
+    }
+
+    &__show-tablet, &__show-laptop {display: none;}
+
+    &__read-more {
+        margin-left: 32px;
+        @include fonts-size(16, 500);
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -16px;
+            top: 5px;
+            width: 8px;
+            height: 11px;
+            background: url('../icons/read-more/icon.svg') center center / cover no-repeat;
+        }
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
