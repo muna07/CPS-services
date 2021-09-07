@@ -1,5 +1,8 @@
-@media (min-width: 768px) {
-    .head-block {
+@media (min-width: 750px) {
+    .container {
+        width: 720px;
+    }
+    .head {
 
         &__wrapper-table {
             display: flex;
@@ -48,7 +51,7 @@
             display: none;
         }
 
-        &__desc {
+        &__description {
             display: inline-block;
             width: 310px;
         }
@@ -62,13 +65,16 @@
             display: inline-block;
             width: 360px;
             vertical-align: top;
-            margin: 24px 0 0 45px;
+            margin: 24px 0 0 10px;
         }
     }
 }
 
 @media (min-width: 1200px) {
-    .head-block {
+    .container {
+        width: 1140px;
+    }
+    .head {
         display: none;
     }
 
@@ -93,6 +99,7 @@
 
         &__info {
             @include fonts-size(16px, 500);
+            margin-right: 10px;
         }
 
         &__icon {
@@ -113,7 +120,7 @@
             margin: 0 0 20px 32px;
         }
 
-        &__desc {
+        &__description {
             width: 490px;
         }
 
@@ -129,7 +136,7 @@
         &__img {
             width: 530px;
             height: 310px;
-            margin-left: 180px;
+            margin-left: 35px;
         }
     }
 }

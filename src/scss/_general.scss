@@ -1,4 +1,4 @@
-* {
+body {
     font-family: 'TT Lakes';
     box-sizing: border-box;
 }
@@ -8,8 +8,62 @@
     font-weight: $fw;
 }
 
-.head-block {
-    height: 88px;
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #FF3E79;
+    border: none;
+
+    &_1 {
+        &:before {
+            content: url('../icons/menu-icons/icon_1.svg');
+            width: 20px;
+          }
+    }
+    
+    &_2 {
+        &:before {
+            content: url('../icons/menu-icons/icon_2.svg');
+            width: 20px;
+          }
+    }
+
+    &_3 {
+        &:before {
+            content: url('../icons/menu-icons/icon_3.svg');
+            width: 20px;
+          }
+    }
+
+    &_con {
+        &:before {
+            content: url('../icons/menu-icons/icon_con.svg');
+            width: 20px;
+          }
+    }
+
+    &_personal {
+        &:before {
+            content: url('../icons/menu-icons/icon_personal.svg');
+            width: 20px;
+          }
+    }
+
+    &_sms {
+        &:before {
+            content: url('../icons/menu-icons/icon_personal.svg');
+            width: 20px;
+          }
+    }
+}
+
+.head {
     padding: 18.5px 16px;
     display: flex;
     align-items: center;
@@ -33,7 +87,7 @@
             border-radius: 1px;
         }
     }
-    &__item {
+    &__elem {
         width: 40px;
         height: 40px;
         border-radius: 100%;
@@ -72,38 +126,36 @@
         }
     }
 
-    .menu {
+    &__menu {
+        overflow: scroll;
+    }
 
-        &__list {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            overflow: scroll;
-            list-style-type: none;
-        }
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+    }
 
-        &__link {
-            @include fonts-size(16px, 500);
-            color: #7E7E82;
-            text-decoration: none;
-            display: inline-block;
-            vertical-align: middle;
-            padding: 9px 0 0 5px;
-            width: 230px;
-            height: 40px;
-            margin-right: 20px;
+    &__link {
+        @include fonts-size(16px, 500);
+        color: #7E7E82;
+        text-decoration: none;
+        display: block;
+        width: 230px;
+        height: 40px;
+        margin-right: 20px;
 
-            &:focus {
-                outline: none;
-                border: 2px solid #B8FFEC;
-                border-radius: 6px;
-                background-color: #fff;
-            }
+        &:focus {
+            outline: none;
+            border: 2px solid #B8FFEC;
+            border-radius: 6px;
+            background-color: #fff;
         }
     }
 
-    &__desc {
-        margin: 24px 16px 16px 16px;
+    &__description {
+        margin: 24px 16px 16px 0;
         @include fonts-size(14px, 400);
     }
 

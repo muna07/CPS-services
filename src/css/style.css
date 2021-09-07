@@ -1,31 +1,81 @@
 @charset "UTF-8";
 /* line 1, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
-* {
+body {
   font-family: 'TT Lakes';
   box-sizing: border-box;
 }
 
 /* line 11, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
-.head-block {
-  height: 88px;
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 16, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+.main-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #FF3E79;
+  border: none;
+}
+
+/* line 24, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+.main-btn_1:before {
+  content: url("../icons/menu-icons/icon_1.svg");
+  width: 20px;
+}
+
+/* line 31, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+.main-btn_2:before {
+  content: url("../icons/menu-icons/icon_2.svg");
+  width: 20px;
+}
+
+/* line 38, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+.main-btn_3:before {
+  content: url("../icons/menu-icons/icon_3.svg");
+  width: 20px;
+}
+
+/* line 45, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+.main-btn_con:before {
+  content: url("../icons/menu-icons/icon_con.svg");
+  width: 20px;
+}
+
+/* line 52, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+.main-btn_personal:before {
+  content: url("../icons/menu-icons/icon_personal.svg");
+  width: 20px;
+}
+
+/* line 59, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+.main-btn_sms:before {
+  content: url("../icons/menu-icons/icon_personal.svg");
+  width: 20px;
+}
+
+/* line 66, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+.head {
   padding: 18.5px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* line 18, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
-.head-block__wrapper-table {
+/* line 72, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+.head__wrapper-table {
   display: none;
 }
 
-/* line 22, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
-.head-block__logo {
+/* line 76, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+.head__logo {
   position: relative;
 }
 
-/* line 25, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
-.head-block__logo::after {
+/* line 79, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+.head__logo::after {
   content: '';
   position: absolute;
   right: -12px;
@@ -36,8 +86,8 @@
   border-radius: 1px;
 }
 
-/* line 36, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
-.head-block__item {
+/* line 90, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+.head__elem {
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -47,19 +97,19 @@
   justify-content: center;
 }
 
-/* line 47, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+/* line 101, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .promo {
   min-height: 500px;
   padding: 24px 0 35px 0;
   background-color: #f8f8f8;
 }
 
-/* line 52, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+/* line 106, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .promo__reviews, .promo__item-wrapper {
   display: none;
 }
 
-/* line 56, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+/* line 110, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .promo__title {
   font-size: 28px;
   font-weight: 700;
@@ -67,7 +117,7 @@
   position: relative;
 }
 
-/* line 61, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+/* line 115, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .promo__title::before {
   content: '';
   position: absolute;
@@ -81,50 +131,52 @@
   border-top-right-radius: 10px;
 }
 
-/* line 77, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
-.promo .menu__list {
+/* line 129, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+.promo__menu {
+  overflow: scroll;
+}
+
+/* line 133, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+.promo__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  overflow: scroll;
   list-style-type: none;
 }
 
-/* line 85, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
-.promo .menu__link {
+/* line 140, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+.promo__link {
   font-size: 16px;
   font-weight: 500;
   color: #7E7E82;
   text-decoration: none;
-  display: inline-block;
-  vertical-align: middle;
-  padding: 9px 0 0 5px;
+  display: block;
   width: 230px;
   height: 40px;
   margin-right: 20px;
 }
 
-/* line 96, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
-.promo .menu__link:focus {
+/* line 149, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+.promo__link:focus {
   outline: none;
   border: 2px solid #B8FFEC;
   border-radius: 6px;
   background-color: #fff;
 }
 
-/* line 105, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
-.promo__desc {
-  margin: 24px 16px 16px 16px;
+/* line 157, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+.promo__description {
+  margin: 24px 16px 16px 0;
   font-size: 14px;
   font-weight: 400;
 }
 
-/* line 110, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+/* line 162, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .promo__show-tablet, .promo__show-laptop {
   display: none;
 }
 
-/* line 112, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+/* line 164, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .promo__read-more {
   margin-left: 32px;
   font-size: 16;
@@ -132,7 +184,7 @@
   position: relative;
 }
 
-/* line 117, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+/* line 169, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .promo__read-more::before {
   content: '';
   position: absolute;
@@ -143,16 +195,20 @@
   background: url("../icons/read-more/icon.svg") center center/cover no-repeat;
 }
 
-/* line 128, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+/* line 180, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .promo__img {
   display: block;
   margin: 0 auto;
   width: 100%;
 }
 
-@media (min-width: 768px) {
-  /* line 4, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
-  .head-block__wrapper-table {
+@media (min-width: 750px) {
+  /* line 2, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
+  .container {
+    width: 720px;
+  }
+  /* line 7, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
+  .head__wrapper-table {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -160,8 +216,8 @@
     width: 150px;
     position: relative;
   }
-  /* line 12, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
-  .head-block__wrapper-table::after {
+  /* line 15, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
+  .head__wrapper-table::after {
     content: '';
     position: absolute;
     right: -15px;
@@ -170,17 +226,17 @@
     background-color: #efefef;
     border-radius: 1px;
   }
-  /* line 23, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
-  .head-block__logo {
+  /* line 26, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
+  .head__logo {
     position: relative;
   }
-  /* line 26, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
-  .head-block__logo::after {
+  /* line 29, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
+  .head__logo::after {
     content: '';
     display: none;
   }
-  /* line 31, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
-  .head-block__logo::before {
+  /* line 34, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
+  .head__logo::before {
     content: '';
     position: absolute;
     left: -15px;
@@ -190,57 +246,62 @@
     border-radius: 1px;
     background-color: #efefef;
   }
-  /* line 47, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
+  /* line 50, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
   .promo__reviews, .promo__item-wrapper {
     display: none;
   }
-  /* line 51, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
-  .promo__desc {
+  /* line 54, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
+  .promo__description {
     display: inline-block;
     width: 310px;
   }
-  /* line 56, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
+  /* line 59, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
   .promo__show-tablet {
     display: block;
     margin-bottom: 10px;
   }
-  /* line 61, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
+  /* line 64, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
   .promo__img {
     display: inline-block;
     width: 360px;
     vertical-align: top;
-    margin: 24px 0 0 45px;
+    margin: 24px 0 0 10px;
   }
 }
 
 @media (min-width: 1200px) {
-  /* line 71, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
-  .head-block {
-    display: none;
+  /* line 74, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
+  .container {
+    width: 1140px;
   }
   /* line 77, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
+  .head {
+    display: none;
+  }
+  /* line 83, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
   .promo__item-wrapper {
     display: flex;
   }
-  /* line 81, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
+  /* line 87, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
   .promo__head-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  /* line 87, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
+  /* line 93, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
   .promo__item {
     margin-right: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  /* line 94, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
+  /* line 100, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
   .promo__info {
     font-size: 16px;
     font-weight: 500;
+    margin-right: 10px;
   }
-  /* line 98, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
+  /* line 105, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
   .promo__icon {
     width: 40px;
     height: 40px;
@@ -251,7 +312,7 @@
     justify-content: center;
     margin-left: 10px;
   }
-  /* line 109, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
+  /* line 116, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
   .promo__reviews {
     display: block;
     font-size: 16px;
@@ -259,24 +320,24 @@
     color: #7E7E82;
     margin: 0 0 20px 32px;
   }
-  /* line 116, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
-  .promo__desc {
+  /* line 123, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
+  .promo__description {
     width: 490px;
   }
-  /* line 120, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
+  /* line 127, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
   .promo__show-tablet {
     display: inline-block;
     margin-bottom: 10px;
   }
-  /* line 125, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
+  /* line 132, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
   .promo__show-laptop {
     display: inline;
   }
-  /* line 129, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
+  /* line 136, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_media.scss */
   .promo__img {
     width: 530px;
     height: 310px;
-    margin-left: 180px;
+    margin-left: 35px;
   }
 }
 
