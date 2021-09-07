@@ -7,7 +7,7 @@ body {
 
 /* line 11, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .container {
-  width: 100%;
+  width: auto;
   margin: 0 auto;
 }
 
@@ -138,9 +138,9 @@ body {
 
 /* line 133, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .promo__list {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   list-style-type: none;
 }
 
@@ -150,13 +150,15 @@ body {
   font-weight: 500;
   color: #7E7E82;
   text-decoration: none;
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 230px;
   height: 40px;
   margin-right: 20px;
 }
 
-/* line 149, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+/* line 151, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .promo__link:focus {
   outline: none;
   border: 2px solid #B8FFEC;
@@ -164,19 +166,19 @@ body {
   background-color: #fff;
 }
 
-/* line 157, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+/* line 159, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .promo__description {
   margin: 24px 16px 16px 0;
   font-size: 14px;
   font-weight: 400;
 }
 
-/* line 162, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+/* line 164, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .promo__show-tablet, .promo__show-laptop {
   display: none;
 }
 
-/* line 164, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+/* line 166, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .promo__read-more {
   margin-left: 32px;
   font-size: 16;
@@ -184,7 +186,7 @@ body {
   position: relative;
 }
 
-/* line 169, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+/* line 171, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .promo__read-more::before {
   content: '';
   position: absolute;
@@ -195,7 +197,7 @@ body {
   background: url("../icons/read-more/icon.svg") center center/cover no-repeat;
 }
 
-/* line 180, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
+/* line 182, ../../../OneDrive/Рабочий стол/CPS-services/src/scss/_general.scss */
 .promo__img {
   display: block;
   margin: 0 auto;
