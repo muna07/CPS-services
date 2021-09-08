@@ -1,5 +1,7 @@
 .menu {
     overflow: scroll;
+    overflow-y: hidden;
+    height: 80px;
 
     &__list {
         display: inline-flex;
@@ -19,6 +21,7 @@
         width: 230px;
         height: 40px;
         margin-right: 20px;
+        transition: 0.5s all;
     
         &:focus {
             outline: none;
