@@ -3,64 +3,9 @@ body {
     box-sizing: border-box;
 }
 
-@mixin fonts-size($fs, $fw) {
-    font-size: $fs;
-    font-weight: $fw;
-}
-
 .container {
     width: auto;
     margin: 0 auto;
-}
-
-.main-btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background-color: #FF3E79;
-    border: none;
-
-    &_1 {
-        &:before {
-            content: url('../icons/menu-icons/icon_1.svg');
-            width: 20px;
-          }
-    }
-    
-    &_2 {
-        &:before {
-            content: url('../icons/menu-icons/icon_2.svg');
-            width: 20px;
-          }
-    }
-
-    &_3 {
-        &:before {
-            content: url('../icons/menu-icons/icon_3.svg');
-            width: 20px;
-          }
-    }
-
-    &_con {
-        &:before {
-            content: url('../icons/menu-icons/icon_con.svg');
-            width: 20px;
-          }
-    }
-
-    &_personal {
-        &:before {
-            content: url('../icons/menu-icons/icon_personal.svg');
-            width: 20px;
-          }
-    }
-
-    &_sms {
-        &:before {
-            content: url('../icons/menu-icons/icon_personal.svg');
-            width: 20px;
-          }
-    }
 }
 
 .head {
@@ -108,7 +53,8 @@ body {
     }
 
     &__title {
-        @include fonts-size(28px, 700);
+        font-weight: 700;
+        font-size: 28px;
         margin-left: 16px;
         position: relative;
 
@@ -126,46 +72,18 @@ body {
         }
     }
 
-    &__menu {
-        overflow: scroll;
-    }
-
-    &__list {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        list-style-type: none;
-    }
-
-    &__link {
-        @include fonts-size(16px, 500);
-        color: #7E7E82;
-        text-decoration: none;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 230px;
-        height: 40px;
-        margin-right: 20px;
-
-        &:focus {
-            outline: none;
-            border: 2px solid #B8FFEC;
-            border-radius: 6px;
-            background-color: #fff;
-        }
-    }
-
     &__description {
         margin: 24px 16px 16px 0;
-        @include fonts-size(14px, 400);
+        font-weight: 400;
+        font-size: 14px;
     }
 
     &__show-tablet, &__show-laptop {display: none;}
 
     &__read-more {
         margin-left: 32px;
-        @include fonts-size(16, 500);
+        font-weight: 500;
+        font-size: 16px;
         position: relative;
 
         &::before {

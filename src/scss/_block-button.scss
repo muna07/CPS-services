@@ -1,0 +1,49 @@
+.main-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #FF3E79;
+    border: none;
+
+    &_1 {
+        &:before {
+            content: url('../icons/menu-icons/icon_1.svg');
+            width: 20px;
+          }
+    }
+    
+    &_2 {
+        &:before {
+            content: url('../icons/menu-icons/icon_2.svg');
+            width: 20px;
+          }
+    }
+
+    &_3 {
+        &:before {
+            content: url('../icons/menu-icons/icon_3.svg');
+            width: 20px;
+          }
+    }
+
+    &_con {
+        &:before {
+            content: url('../icons/menu-icons/icon_con.svg');
+            width: 20px;
+          }
+    }
+
+    &_personal {
+        &:before {
+            content: url('../icons/menu-icons/icon_personal.svg');
+            width: 20px;
+          }
+    }
+
+    &_sms {
+        &:before {
+            content: url('../icons/menu-icons/icon_personal.svg');
+            width: 20px;
+          }
+    }
+}

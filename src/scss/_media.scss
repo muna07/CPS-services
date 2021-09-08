@@ -98,7 +98,8 @@
         }
 
         &__info {
-            @include fonts-size(16px, 500);
+            font-weight: 500;
+            font-size: 16px;
             margin-right: 10px;
         }
 
@@ -115,7 +116,8 @@
 
         &__reviews {
             display: block;
-            @include fonts-size(16px, 500);
+            font-weight: 500;
+            font-size: 16px;
             color: #7E7E82;
             margin: 0 0 20px 32px;
         }
